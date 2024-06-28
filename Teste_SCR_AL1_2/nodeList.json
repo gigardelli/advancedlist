@@ -1,0 +1,34 @@
+[
+    {
+        "id" : "616fed2f-4247-45b5-b7a5-323583f63ba8",
+        "name" : "Palin_SCR",
+        "type" : "application/vnd.sas.business.rule.list.advanced",
+        "activeVersionReference" : false,
+        "referencingDecisions" : [
+            {
+                "id" : "22c64621-ab75-4f28-8597-0a276be7c3ab",
+                "name" : "Teste_SCR_AL",
+                "versionId" : "8fd47a30-d637-4772-ae87-fe1e61bc741f"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    },
+    {
+        "id" : "ee41d550-4bec-4bb8-a4c7-479b26d66dcc",
+        "name" : "Rule_set_3",
+        "type" : "application/vnd.sas.business.rule.set",
+        "versionId" : "81e1249d-85f4-4699-a0e9-242d5de4755e",
+        "versionName" : "1.0",
+        "activeVersionReference" : false,
+        "referencingDecisions" : [
+            {
+                "id" : "22c64621-ab75-4f28-8597-0a276be7c3ab",
+                "name" : "Teste_SCR_AL",
+                "versionId" : "8fd47a30-d637-4772-ae87-fe1e61bc741f"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    }
+]
