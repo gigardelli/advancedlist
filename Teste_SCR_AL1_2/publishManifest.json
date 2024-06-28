@@ -1,0 +1,199 @@
+{
+  "creationTimeStamp": "2024-06-28T20:39:39.301149Z",
+  "createdBy": "sasadm",
+  "modifiedTimeStamp": "2024-06-28T20:39:39.30115Z",
+  "modifiedBy": "sasadm",
+  "version": 1,
+  "id": "63cc3505-b15b-4fe0-a541-f3a8cbe20d73",
+  "destinationName": "gitf",
+  "destination": {
+    "creationTimeStamp": "2024-06-28T20:39:14.579376Z",
+    "createdBy": "sasadm",
+    "modifiedTimeStamp": "2024-06-28T20:39:14.579376Z",
+    "modifiedBy": "sasadm",
+    "version": 2,
+    "id": "32ac4b47-6f2d-4550-9842-58dd65fa2d27",
+    "name": "gitf",
+    "description": "desc",
+    "destinationType": "git",
+    "properties": [
+      {
+        "name": "credDomainId",
+        "value": "myGitDomain"
+      },
+      {
+        "name": "remoteRepositoryURL",
+        "value": "https://github.com/gigardelli/advancedlist.git"
+      },
+      {
+        "name": "localRepositoryLocation",
+        "value": "/home/azureuser/git/advancedlist"
+      },
+      {
+        "name": "userEmail",
+        "value": "giovanni.gardelli@outlook.com"
+      },
+      {
+        "name": "userName",
+        "value": "gigardelli"
+      },
+      {
+        "name": "codeGenerationMode",
+        "value": "mas"
+      },
+      {
+        "name": "gitBranch",
+        "value": "main"
+      }
+    ],
+    "links": [
+      {
+        "method": "GET",
+        "rel": "up",
+        "href": "/modelPublish/destinations",
+        "uri": "/modelPublish/destinations",
+        "type": "application/vnd.sas.collection"
+      },
+      {
+        "method": "GET",
+        "rel": "self",
+        "href": "/modelPublish/destinations/gitf",
+        "uri": "/modelPublish/destinations/gitf",
+        "type": "application/vnd.sas.models.publishing.destination"
+      },
+      {
+        "method": "DELETE",
+        "rel": "delete",
+        "href": "/modelPublish/destinations/gitf",
+        "uri": "/modelPublish/destinations/gitf"
+      },
+      {
+        "method": "PUT",
+        "rel": "update",
+        "href": "/modelPublish/destinations/gitf",
+        "uri": "/modelPublish/destinations/gitf",
+        "type": "application/vnd.sas.models.publishing.destination"
+      },
+      {
+        "method": "GET",
+        "rel": "getGitFolders",
+        "href": "/modelPublish/destinations/gitf/gitFolders",
+        "uri": "/modelPublish/destinations/gitf/gitFolders",
+        "type": "application/vnd.sas.collection"
+      }
+    ]
+  },
+  "content": {
+    "creationTimeStamp": "0001-01-01T00:00:00Z",
+    "modifiedTimeStamp": "0001-01-01T00:00:00Z",
+    "modelName": "Teste_SCR_AL1_2",
+    "codeType": "ds2",
+    "codeURI": "/decisions/flows/22c64621-ab75-4f28-8597-0a276be7c3ab/revisions/8fd47a30-d637-4772-ae87-fe1e61bc741f/code?rootPackageName=Teste_SCR_AL1_2\u0026lookupMode=INLINE\u0026treatmentGroupMode=INLINE\u0026globalVariableMode=INLINE\u0026traversedPathFlag=false\u0026isGeneratingRuleFiredColumn=false\u0026codeTarget=gitMas",
+    "codeMediaType": "text/vnd.sas.source.ds2.async",
+    "sourceURI": "/decisions/flows/22c64621-ab75-4f28-8597-0a276be7c3ab/revisions/8fd47a30-d637-4772-ae87-fe1e61bc741f",
+    "publishLevel": "decision"
+  },
+  "properties": {
+    "gitFolderPath": "Teste_SCR_AL1_2",
+    "gitRepositoryURL": "https://github.com/gigardelli/advancedlist.git"
+  },
+  "sourceURI": "/decisions/flows/22c64621-ab75-4f28-8597-0a276be7c3ab/revisions/8fd47a30-d637-4772-ae87-fe1e61bc741f",
+  "resources": [
+    {
+      "creationTimeStamp": "2024-05-29T17:35:14.399Z",
+      "createdBy": "sasadm",
+      "modifiedTimeStamp": "2024-05-29T17:49:51.753Z",
+      "modifiedBy": "sasadm",
+      "name": "Rule_set_3",
+      "uri": "/businessRules/ruleSets/ee41d550-4bec-4bb8-a4c7-479b26d66dcc/revisions/81e1249d-85f4-4699-a0e9-242d5de4755e",
+      "mediaType": "application/vnd.sas.business.rule.set",
+      "contentVersion": "1.0",
+      "inline": true
+    },
+    {
+      "creationTimeStamp": "2024-05-29T16:27:39.109Z",
+      "createdBy": "sasadm",
+      "modifiedTimeStamp": "2024-06-21T17:27:43.49Z",
+      "modifiedBy": "sasadm",
+      "name": "Palin_SCR",
+      "uri": "/listData/lists/616fed2f-4247-45b5-b7a5-323583f63ba8",
+      "mediaType": "application/vnd.sas.listdata.list",
+      "inline": false
+    }
+  ],
+  "inputVariables": [
+    {
+      "name": "client_id",
+      "description": "",
+      "role": "",
+      "type": "integer",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    }
+  ],
+  "outputVariables": [
+    {
+      "name": "Email",
+      "description": "",
+      "role": "",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    },
+    {
+      "name": "Nome",
+      "description": "",
+      "role": "",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    },
+    {
+      "name": "Telefone",
+      "description": "",
+      "role": "",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    },
+    {
+      "name": "client_id",
+      "description": "",
+      "role": "",
+      "type": "integer",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    }
+  ],
+  "component": {
+    "majorVersion": 1,
+    "minorVersion": 2,
+    "name": "Teste_SCR_AL"
+  },
+  "product": {
+    "majorVersion": 3,
+    "minorVersion": 140,
+    "versionName": "3.140.8",
+    "name": "Decisions Service"
+  },
+  "service": {
+    "name": "Model Publish service"
+  },
+  "baseImage": {},
+  "requirements": [
+    {
+      "name": "deploymentRedis",
+      "value": "hiredis"
+    }
+  ]
+}
