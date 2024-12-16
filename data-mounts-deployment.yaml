@@ -1,0 +1,20 @@
+apiVersion: builtin
+kind: PatchTransformer
+metadata:
+  name: data-mounts-deployment
+patch: |-
+  - op: add
+    path: /spec/template/spec/containers/0/volumeMounts/-
+    value:
+      name: nfsdata
+      mountPath: "/nfsdata"
+  - op: add
+    path: /spec/template/spec/volumes/-
+    value:
+     name: nfsdata
+     nfs:
+       path: /export/pvs/viya4-nfsdata
+       server: 10.115.2.4
+target:
+  kind: Deployment
+  annotationSelector: sas.com/sas-access-config=true
