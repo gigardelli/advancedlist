@@ -1,0 +1,11 @@
+apiVersion: builtin
+kind: PatchTransformer
+metadata:
+  name: compute-server-saswork
+patch: |-
+  - op: add
+    path: /template/spec/volumes/-
+    value:
+      name: viya
+      persistentVolumeClaim:
+        claimName: sas-work-pvc
