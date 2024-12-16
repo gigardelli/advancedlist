@@ -1,0 +1,32 @@
+apiVersion: builtin
+kind: PatchTransformer
+metadata:
+  name: data-mounts-cas
+patch: |-
+  - op: add
+    path: /spec/controllerTemplate/spec/containers/0/volumeMounts/-
+    value:
+      name: nfsdata
+      mountPath: "/nfsdata"
+  - op: add
+    path: /spec/controllerTemplate/spec/volumes/-
+    value:
+     name: nfsdata
+     nfs:
+       path: /export/pvs/viya4-nfsdata
+       server: 10.115.2.4
+  - op: add
+    path: /spec/controllerTemplate/spec/containers/0/volumeMounts/-
+    value:
+      name: sasdata
+      mountPath: "/sasdata"
+  - op: add
+    path: /spec/controllerTemplate/spec/volumes/-
+    value:
+      name: sasdata
+      nfs:
+        path: /export/pvs/viya4-sasdata
+        server: 10.115.2.4
+target:
+  kind: CASDeployment
+  annotationSelector: sas.com/sas-access-config=true
