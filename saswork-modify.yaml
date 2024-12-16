@@ -27,3 +27,6 @@ patch: |-
       name: viya
       persistentVolumeClaim:
         claimName: sas-work-pvc
+target:
+  kind: PodTemplate
+  labelSelector: "sas.com/template-intent=sas-launcher"
