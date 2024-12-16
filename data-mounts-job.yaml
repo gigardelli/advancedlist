@@ -1,0 +1,32 @@
+apiVersion: builtin
+kind: PatchTransformer
+metadata:
+  name: data-mounts-job
+patch: |-
+  - op: add
+    path: /template/spec/containers/0/volumeMounts/-
+    value:
+      name: nfsdata
+      mountPath: "/nfsdata"
+  - op: add
+    path: /template/spec/volumes/-
+    value:
+     name: nfsdata
+     nfs:
+       path: /export/pvs/viya4-nfsdata
+       server: 10.115.2.4
+  - op: add
+    path: /template/spec/containers/0/volumeMounts/-
+    value:
+      name: sasdata
+      mountPath: "/sasdata"
+  - op: add
+    path: /template/spec/volumes/-
+    value:
+      name: sasdata
+      nfs:
+        path: /export/pvs/viya4-sasdata
+        server: 10.115.2.4
+target:
+  kind: PodTemplate
+  labelSelector: sas.com/template-intent=sas-launcher
